@@ -1,0 +1,55 @@
+{
+  "name": "4onetwodev-portfolio",
+  "version": "1.0.0",
+  "description": "A modern React portfolio website for 4OneTwoDev showcasing development services and projects",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "keywords": [
+    "portfolio",
+    "website",
+    "react",
+    "development",
+    "4onetwodev",
+    "web-development",
+    "mobile-apps",
+    "cloud-solutions"
+  ],
+  "author": "4OneTwoDev Team",
+  "license": "MIT",
+  "dependencies": {
+    "aos": "^2.3.4",
+    "framer-motion": "^10.16.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.8.0",
+    "react-router-dom": "^6.8.1",
+    "react-scripts": "5.0.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  },
+  "homepage": "https://4onetwodev.github.io/portfolio-website",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/4onetwodev/portfolio-website.git"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
