@@ -4,8 +4,23 @@ import { HiMenuAlt3, HiX } from 'react-icons/hi';
 import './Header.css';
 
 const Header = () => {
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [scrollProgress, setScrollProgress] = useState(0);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollTop = window.pageYOffset;
+            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const scrollPercent = (scrollTop / docHeight) * 100;
+            
+            setScrollProgress(scrollPercent);
+            setIsScrolled(scrollTop > 50);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -100,6 +115,17 @@ const Header = () => {
                     </button>
                 </div>
             </div>
+            
+            {/* Scroll Progress Bar */}
+            <motion.div 
+                className="scroll-progress"
+                style={{
+                    scaleX: scrollProgress / 100,
+                }}
+                initial={{ scaleX: 0 }}
+                animate={{ scaleX: scrollProgress / 100 }}
+                transition={{ duration: 0.1 }}
+            />
         </motion.header>
     );
 };

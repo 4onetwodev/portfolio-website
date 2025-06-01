@@ -299,6 +299,31 @@ const Contact = () => {
         <div className="bg-circle bg-circle-1"></div>
         <div className="bg-circle bg-circle-2"></div>
         <div className="bg-gradient"></div>
+        
+        {/* Animated Particles */}
+        <div className="contact-particles">
+          {[...Array(15)].map((_, i) => (
+            <motion.div
+              key={i}
+              className="contact-particle"
+              initial={{ 
+                x: Math.random() * window.innerWidth,
+                y: Math.random() * window.innerHeight,
+                scale: 0
+              }}
+              animate={{
+                y: [null, Math.random() * window.innerHeight],
+                x: [null, Math.random() * window.innerWidth],
+                scale: [0, 1, 0]
+              }}
+              transition={{
+                duration: Math.random() * 15 + 10,
+                repeat: Infinity,
+                ease: "linear"
+              }}
+            />
+          ))}
+        </div>
       </div>
     </section>
   );

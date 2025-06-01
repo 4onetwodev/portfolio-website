@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaGithub, FaExternalLinkAlt, FaReact, FaNodeJs, FaDatabase, FaMobile } from 'react-icons/fa';
 import { SiTypescript, SiMongodb, SiExpress, SiTailwindcss } from 'react-icons/si';
+import LazyImage from '../common/LazyImage';
 import './Portfolio.css';
 
 const Portfolio = () => {
@@ -36,7 +37,7 @@ const Portfolio = () => {
                 { icon: <FaDatabase />, name: 'PostgreSQL', color: '#336791' },
                 { icon: <SiTailwindcss />, name: 'Tailwind', color: '#06b6d4' }
             ],
-            image: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
+            image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
             liveUrl: '#',
             githubUrl: '#',
             featured: false
@@ -52,7 +53,7 @@ const Portfolio = () => {
                 { icon: <FaNodeJs />, name: 'Node.js', color: '#339933' },
                 { icon: <SiMongodb />, name: 'MongoDB', color: '#47a248' }
             ],
-            image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
+            image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
             liveUrl: '#',
             githubUrl: '#',
             featured: true
@@ -68,7 +69,7 @@ const Portfolio = () => {
                 { icon: <SiMongodb />, name: 'MongoDB', color: '#47a248' },
                 { icon: <SiTailwindcss />, name: 'Tailwind', color: '#06b6d4' }
             ],
-            image: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
+            image: 'https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
             liveUrl: '#',
             githubUrl: '#',
             featured: false
@@ -84,7 +85,7 @@ const Portfolio = () => {
                 { icon: <FaNodeJs />, name: 'Node.js', color: '#339933' },
                 { icon: <FaDatabase />, name: 'PostgreSQL', color: '#336791' }
             ],
-            image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
+            image: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
             liveUrl: '#',
             githubUrl: '#',
             featured: false
@@ -100,7 +101,7 @@ const Portfolio = () => {
                 { icon: <FaNodeJs />, name: 'Node.js', color: '#339933' },
                 { icon: <SiMongodb />, name: 'MongoDB', color: '#47a248' }
             ],
-            image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
+            image: 'https://images.unsplash.com/photo-1611095790444-1dfa35ad5d96?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
             liveUrl: '#',
             githubUrl: '#',
             featured: true
@@ -207,7 +208,11 @@ const Portfolio = () => {
                                 whileHover={{ y: -10 }}
                             >
                                 <div className="project-image">
-                                    <img src={project.image} alt={project.title} />
+                                    <LazyImage 
+                                        src={project.image} 
+                                        alt={project.title}
+                                        placeholder="linear-gradient(135deg, #f0f0f0 0%, #e0e0e0 100%)"
+                                    />
                                     <div className="project-overlay">
                                         <div className="project-links">
                                             <motion.a

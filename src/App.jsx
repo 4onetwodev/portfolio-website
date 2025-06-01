@@ -8,6 +8,8 @@ import About from './components/About/About';
 import Portfolio from './components/Portfolio/Portfolio';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
+import PerformanceMonitor from './components/common/PerformanceMonitor';
+import CursorTrail from './components/common/CursorTrail';
 import './styles/App.css';
 
 const App = () => {
@@ -22,12 +24,14 @@ const App = () => {
   return (
     <Router>
       <div className="App">
+        <CursorTrail />
         <Header />
         <Hero />
         <About />
         <Portfolio />
         <Contact />
         <Footer />
+        <PerformanceMonitor />
       </div>
     </Router>
   );
