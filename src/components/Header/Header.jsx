@@ -80,10 +80,10 @@ const Header = () => {
                             </li>
                             <li>
                                 <button 
-                                    onClick={() => scrollToSection('portfolio')}
+                                    onClick={() => scrollToSection('case-studies')}
                                     className="nav-link"
                                 >
-                                    Portfolio
+                                    Case Studies
                                 </button>
                             </li>
                             <li>

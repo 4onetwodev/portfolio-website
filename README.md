@@ -132,7 +132,6 @@ We're a passionate team of developers creating innovative digital solutions that
 
 - **Website**: [4onetwodev.uk](https://4onetwodev.uk)
 - **Email**: hello@4onetwodev.uk
-- **Location**: London, United Kingdom
 
 ---
 

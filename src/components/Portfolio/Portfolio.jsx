@@ -6,6 +6,9 @@ import LazyImage from '../common/LazyImage';
 import './Portfolio.css';
 
 const Portfolio = () => {
+    // Temporarily hidden for startup phase - will be enabled when projects are available
+    const showPortfolio = false;
+    
     const [filter, setFilter] = useState('all');
     const [hoveredProject, setHoveredProject] = useState(null);
 
@@ -144,6 +147,11 @@ const Portfolio = () => {
             }
         }
     };
+
+    // Hide portfolio section for startup phase
+    if (!showPortfolio) {
+        return null;
+    }
 
     return (
         <section id="portfolio" className="portfolio">

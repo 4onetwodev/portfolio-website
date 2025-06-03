@@ -3,7 +3,6 @@ import { motion } from 'framer-motion';
 import { 
   FiMail, 
   FiPhone, 
-  FiMapPin, 
   FiSend, 
   FiUser, 
   FiMessageSquare,
@@ -56,20 +55,14 @@ const Contact = () => {
     {
       icon: FiMail,
       title: 'Email Us',
-      content: 'hello@4onetwodev.uk',
-      link: 'mailto:hello@4onetwodev.uk'
+      content: 'contact@4onetwodev.uk',
+      link: 'mailto:contact@4onetwodev.uk'
     },
     {
       icon: FiPhone,
       title: 'Call Us',
-      content: '+44 (0) 123 456 7890',
-      link: 'tel:+44123456789'
-    },
-    {
-      icon: FiMapPin,
-      title: 'Visit Us',
-      content: 'London, United Kingdom',
-      link: '#'
+      content: '+961 (71) 487 193',
+      link: 'tel:+96171487293'
     },
     {
       icon: FiClock,
@@ -80,10 +73,10 @@ const Contact = () => {
   ];
 
   const socialLinks = [
-    { icon: FaLinkedin, url: '#', label: 'LinkedIn' },
-    { icon: FaTwitter, url: '#', label: 'Twitter' },
-    { icon: FaGithub, url: '#', label: 'GitHub' },
-    { icon: FaInstagram, url: '#', label: 'Instagram' }
+    { icon: FaLinkedin, url: 'https://linkedin.com/company/4onetwodev', label: 'LinkedIn' },
+    { icon: FaTwitter, url: 'https://twitter.com/4onetwodev', label: 'Twitter' },
+    { icon: FaGithub, url: 'https://github.com/4onetwodev', label: 'GitHub' },
+    { icon: FaInstagram, url: 'https://instagram.com/4onetwodev', label: 'Instagram' }
   ];
 
   return (
@@ -261,6 +254,8 @@ const Contact = () => {
                     <motion.a
                       key={index}
                       href={social.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="social-link"
                       aria-label={social.label}
                       whileHover={{ scale: 1.1, rotate: 5 }}

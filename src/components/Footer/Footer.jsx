@@ -3,7 +3,6 @@ import { motion } from 'framer-motion';
 import { 
   FiMail, 
   FiPhone, 
-  FiMapPin, 
   FiArrowRight,
   FiHeart
 } from 'react-icons/fi';
@@ -25,16 +24,16 @@ const Footer = () => {
   const quickLinks = [
     { name: 'Home', href: '#hero' },
     { name: 'About', href: '#about' },
-    { name: 'Portfolio', href: '#portfolio' },
+    { name: 'Case Studies', href: '#case-studies' },
     { name: 'Contact', href: '#contact' }
   ];
 
   const services = [
-    { name: 'Web Development', href: '#' },
-    { name: 'Mobile Apps', href: '#' },
-    { name: 'Cloud Solutions', href: '#' },
-    { name: 'DevOps', href: '#' },
-    { name: 'Consulting', href: '#' }
+    { name: 'Web Development', href: '#about' },
+    { name: 'Mobile Apps', href: '#about' },
+    { name: 'Software Development', href: '#about' },
+    { name: 'IoT Applications', href: '#about' },
+    { name: 'Consulting', href: '#contact' }
   ];
 
   const technologies = [
@@ -45,10 +44,10 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    { icon: FaLinkedin, url: '#', label: 'LinkedIn' },
-    { icon: FaTwitter, url: '#', label: 'Twitter' },
-    { icon: FaGithub, url: '#', label: 'GitHub' },
-    { icon: FaInstagram, url: '#', label: 'Instagram' }
+    { icon: FaLinkedin, url: 'https://linkedin.com/company/4onetwodev', label: 'LinkedIn' },
+    { icon: FaTwitter, url: 'https://twitter.com/4onetwodev', label: 'Twitter' },
+    { icon: FaGithub, url: 'https://github.com/4onetwodev', label: 'GitHub' },
+    { icon: FaInstagram, url: 'https://instagram.com/4onetwodev', label: 'Instagram' }
   ];
 
   const scrollToTop = () => {
@@ -117,15 +116,11 @@ const Footer = () => {
               <div className="contact-info">
                 <div className="contact-item">
                   <FiMail className="contact-icon" />
-                  <a href="mailto:hello@4onetwodev.uk">hello@4onetwodev.uk</a>
+                  <a href="mailto:hello@4onetwodev.uk">contact@4onetwodev.uk</a>
                 </div>
                 <div className="contact-item">
                   <FiPhone className="contact-icon" />
-                  <a href="tel:+44123456789">+44 (0) 123 456 7890</a>
-                </div>
-                <div className="contact-item">
-                  <FiMapPin className="contact-icon" />
-                  <span>London, United Kingdom</span>
+                  <a href="tel:+96171487293">+961 (71) 478 293</a>
                 </div>
               </div>
             </motion.div>
@@ -205,6 +200,8 @@ const Footer = () => {
                     <motion.a
                       key={index}
                       href={social.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="social-link"
                       aria-label={social.label}
                       whileHover={{ scale: 1.2, y: -3 }}
@@ -239,13 +236,13 @@ const Footer = () => {
                 >
                   <FiHeart className="heart-icon" />
                 </motion.span>
-                {' '}in London
+                {' '}with passion
               </p>
             </div>
             <div className="legal-links">
-              <a href="#">Privacy Policy</a>
-              <a href="#">Terms of Service</a>
-              <a href="#">Cookie Policy</a>
+              <a href="#contact">Privacy Policy</a>
+              <a href="#contact">Terms of Service</a>
+              <a href="#contact">Cookie Policy</a>
             </div>
             <motion.button 
               className="back-to-top"

@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaReact, FaNodeJs, FaAws, FaMobile, FaCode, FaRocket } from 'react-icons/fa';
-import { SiTypescript, SiMongodb, SiDocker, SiKubernetes } from 'react-icons/si';
+import { FaReact, FaNodeJs, FaAws, FaMobile, FaCode, FaRocket, FaMicrochip, FaWifi } from 'react-icons/fa';
+import { SiTypescript, SiMongodb, SiDocker, SiKubernetes, SiArduino, SiRaspberrypi } from 'react-icons/si';
 import './About.css';
 
 const About = () => {
@@ -11,29 +11,35 @@ const About = () => {
         { icon: <FaNodeJs />, name: 'Node.js', color: '#339933' },
         { icon: <SiMongodb />, name: 'MongoDB', color: '#47a248' },
         { icon: <FaAws />, name: 'AWS', color: '#ff9900' },
-        { icon: <SiDocker />, name: 'Docker', color: '#2496ed' },
-        { icon: <SiKubernetes />, name: 'Kubernetes', color: '#326ce5' },
         { icon: <FaMobile />, name: 'React Native', color: '#61dafb' },
+        { icon: <SiArduino />, name: 'Arduino', color: '#00979d' },
+        { icon: <SiRaspberrypi />, name: 'Raspberry Pi', color: '#c51a4a' },
     ];
 
     const services = [
         {
             icon: <FaCode />,
             title: 'Web Development',
-            description: 'Custom web applications built with modern frameworks and best practices.',
-            features: ['React & Next.js', 'Node.js Backend', 'Database Design', 'API Development']
+            description: 'Modern, responsive web applications built with cutting-edge technologies and best practices.',
+            features: ['React & Next.js', 'Full-Stack Solutions', 'E-commerce Platforms', 'Progressive Web Apps']
         },
         {
             icon: <FaMobile />,
-            title: 'Mobile Development',
-            description: 'Cross-platform mobile apps that deliver exceptional user experiences.',
-            features: ['React Native', 'iOS & Android', 'Push Notifications', 'App Store Deploy']
+            title: 'Mobile App Development',
+            description: 'Native and cross-platform mobile applications for iOS and Android devices.',
+            features: ['React Native', 'Native iOS & Android', 'App Store Deployment', 'Push Notifications']
         },
         {
             icon: <FaRocket />,
-            title: 'Cloud Solutions',
-            description: 'Scalable cloud infrastructure and DevOps solutions for modern applications.',
-            features: ['AWS/Azure', 'Docker & K8s', 'CI/CD Pipelines', 'Auto Scaling']
+            title: 'Software Development',
+            description: 'Custom software solutions tailored to your business needs and requirements.',
+            features: ['Desktop Applications', 'API Development', 'Database Design', 'System Integration']
+        },
+        {
+            icon: <FaWifi />,
+            title: 'IoT Applications',
+            description: 'Internet of Things solutions connecting devices and enabling smart automation.',
+            features: ['Device Integration', 'Real-time Monitoring', 'Data Analytics', 'Cloud Connectivity']
         }
     ];
 
@@ -79,8 +85,8 @@ const About = () => {
                         <span className="title-gradient"> Drive Results</span>
                     </motion.h2>
                     <motion.p className="section-description" variants={itemVariants}>
-                        With years of experience in cutting-edge technologies, we transform 
-                        complex business challenges into elegant digital solutions.
+                        Specializing in web development, mobile applications, software solutions, and IoT implementations. 
+                        We transform complex business challenges into innovative digital experiences through proven methodologies and cutting-edge technology.
                     </motion.p>
                 </motion.div>
 
@@ -95,27 +101,29 @@ const About = () => {
                         <div className="story-card">
                             <h3>Our Story</h3>
                             <p>
-                                Founded with a passion for innovation, 4OneTwoDev has grown from a 
-                                small team of developers into a trusted technology partner. We believe 
-                                in the power of clean code, thoughtful design, and seamless user experiences.
+                                Founded with a passion for innovation, 4OneTwoDev specializes in creating 
+                                cutting-edge digital solutions across web development, mobile applications, 
+                                custom software, and IoT implementations. We believe in the power of clean code, 
+                                thoughtful design, and seamless user experiences.
                             </p>
                             <p>
                                 Our mission is to help businesses leverage technology to achieve their 
-                                goals, whether that's building a new product from scratch or scaling 
-                                an existing platform to millions of users.
+                                goals, whether that's building a responsive web platform, developing a 
+                                mobile app, creating custom software, or implementing smart IoT solutions 
+                                that connect and automate your operations.
                             </p>
                             <div className="story-stats">
                                 <div className="stat-item">
-                                    <span className="stat-number">50+</span>
-                                    <span className="stat-label">Projects Completed</span>
+                                    <span className="stat-number">100%</span>
+                                    <span className="stat-label">Commitment Level</span>
                                 </div>
                                 <div className="stat-item">
-                                    <span className="stat-number">25+</span>
-                                    <span className="stat-label">Happy Clients</span>
+                                    <span className="stat-number">4</span>
+                                    <span className="stat-label">Core Specializations</span>
                                 </div>
                                 <div className="stat-item">
-                                    <span className="stat-number">99%</span>
-                                    <span className="stat-label">Success Rate</span>
+                                    <span className="stat-number">24/7</span>
+                                    <span className="stat-label">Support Ready</span>
                                 </div>
                             </div>
                         </div>
