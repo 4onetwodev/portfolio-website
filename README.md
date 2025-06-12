@@ -14,6 +14,7 @@ A modern, responsive portfolio website built with React showcasing development s
 - **Interactive Elements**: Hover effects, particle animations, and micro-interactions
 - **Professional Sections**: Hero, About, Portfolio, Contact, and Footer
 - **Project Showcase**: Filterable portfolio with real project examples
+- **Case Studies**: Comprehensive case studies with category-themed SVG illustrations
 - **Contact Form**: Functional contact form with validation and feedback
 - **SEO Optimized**: Clean HTML structure and meta tags
 
@@ -23,6 +24,7 @@ A modern, responsive portfolio website built with React showcasing development s
 - **Styling**: CSS3, Flexbox, Grid
 - **Animations**: Framer Motion, AOS (Animate On Scroll)
 - **Icons**: React Icons, Feather Icons, Font Awesome
+- **Graphics**: SVG, Dynamic Image Generation
 - **Routing**: React Router DOM
 - **Build Tool**: Create React App
 - **Deployment**: GitHub Pages / Cloudflare Pages
@@ -47,13 +49,21 @@ A modern, responsive portfolio website built with React showcasing development s
 
 4. **Open in browser**: Visit `http://localhost:3000`
 
+## 📝 Documentation
+
+- **[CASE_STUDY_IMAGES.md](./CASE_STUDY_IMAGES.md)**: Details about the case study images and how to replace placeholders with real images
+- **[DEPLOYMENT.md](./DEPLOYMENT.md)**: Instructions for deploying the website
+- **[OPTIMIZATION_SUMMARY.md](./OPTIMIZATION_SUMMARY.md)**: Performance optimization details
+
 ## 📁 Project Structure
 
 ```
 portfolio-website/
 ├── public/
 │   ├── index.html          # Main HTML document
-│   └── favicon.ico         # Website favicon
+│   ├── favicon.ico         # Website favicon
+│   └── images/
+│       └── case-studies/   # Case study SVG images
 ├── src/
 │   ├── components/         # React components
 │   │   ├── Header/         # Navigation with mobile menu

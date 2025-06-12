@@ -1,8 +1,8 @@
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #0f0f23;
+    color: #e4e4e7;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -26,14 +26,15 @@ a {
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    background-color: #007bff;
+    background: linear-gradient(135deg, #8b5cf6 0%, #a855f7 100%);
     color: white;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .btn:hover {
-    background-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(139, 92, 246, 0.3);
 }
 
 .fade-in {

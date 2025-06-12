@@ -1,0 +1,5 @@
+Professional web application interface for healthcare patient portal & telemedicine,
+modern UI/UX design with React, TypeScript, PostgreSQL elements.
+High-quality business presentation image with purple and blue color palette.
+Key visual elements: healthcare, patient portal, telemedicine, medical records, video consultation.
+Photorealistic, high-detail render, suitable for a portfolio website.

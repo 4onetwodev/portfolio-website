@@ -1,5 +1,50 @@
 /* Image Enhancement Styles */
 
+/* Case Study SVG Enhancement */
+.case-study-image {
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.case-study-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.6));
+  z-index: 1;
+}
+
+.image-placeholder {
+  font-size: 4rem;
+  position: absolute;
+  z-index: 2;
+  color: rgba(255, 255, 255, 0.7);
+  mix-blend-mode: soft-light;
+  filter: drop-shadow(0 0 8px rgba(0,0,0,0.4));
+}
+
+.case-study-card:hover .case-study-image {
+  transform: scale(1.05);
+}
+
+/* Better contrast for category badges */
+.case-study-category {
+  text-shadow: 0px 0px 2px rgba(0,0,0,0.5);
+  font-weight: 600;
+}
+
+/* Enhance overlay visibility */
+.case-study-overlay {
+  background: linear-gradient(to top, 
+    rgba(0,0,0,0.9) 0%, 
+    rgba(0,0,0,0.7) 40%,
+    rgba(0,0,0,0.4) 60%,
+    transparent 100%);
+}
+
 /* Hero Section Background Enhancement */
 .hero-section {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);

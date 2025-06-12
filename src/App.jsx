@@ -11,6 +11,7 @@ import Footer from './components/Footer/Footer';
 import PerformanceMonitor from './components/common/PerformanceMonitor';
 import CursorTrail from './components/common/CursorTrail';
 import './styles/App.css';
+import './styles/image-enhancements.css';
 
 const App = () => {
   useEffect(() => {

@@ -1,0 +1,5 @@
+# AI-Generated Image Description
+
+Learning management system dashboard showing course content, video lectures, progress analytics, and student discussion forum
+
+This is a placeholder for an AI-generated image representing the lms case study.

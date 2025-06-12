@@ -1,9 +1,9 @@
 .about {
     padding: 6rem 0;
     background: 
-        linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%),
-        radial-gradient(circle at 10% 20%, rgba(102, 126, 234, 0.05) 0%, transparent 20%),
-        radial-gradient(circle at 90% 80%, rgba(118, 75, 162, 0.05) 0%, transparent 20%);
+        linear-gradient(135deg, #0f0f23 0%, #1a1a2e 100%),
+        radial-gradient(circle at 10% 20%, rgba(139, 92, 246, 0.1) 0%, transparent 20%),
+        radial-gradient(circle at 90% 80%, rgba(168, 85, 247, 0.1) 0%, transparent 20%);
     position: relative;
     overflow: hidden;
 }
@@ -15,7 +15,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="%23667eea" opacity="0.08"/><circle cx="20" cy="20" r="0.5" fill="%23764ba2" opacity="0.06"/><circle cx="80" cy="80" r="0.8" fill="%23667eea" opacity="0.04"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="%238b5cf6" opacity="0.08"/><circle cx="20" cy="20" r="0.5" fill="%23a855f7" opacity="0.06"/><circle cx="80" cy="80" r="0.8" fill="%238b5cf6" opacity="0.04"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
     pointer-events: none;
     animation: float 20s ease-in-out infinite;
 }
@@ -47,11 +47,11 @@
 }
 
 .story-card {
-    background: white;
+    background: #1e1e2e;
     padding: 3rem;
     border-radius: 20px;
-    box-shadow: 0 20px 40px rgba(102, 126, 234, 0.1);
-    border: 1px solid rgba(102, 126, 234, 0.1);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(139, 92, 246, 0.2);
     position: relative;
     overflow: hidden;
 }
@@ -63,13 +63,13 @@
     left: 0;
     right: 0;
     height: 4px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #8b5cf6 0%, #a855f7 100%);
 }
 
 .story-card h3 {
     font-size: 2rem;
     font-weight: 700;
-    color: var(--text-color);
+    color: #f4f4f5;
     margin-bottom: 1.5rem;
     position: relative;
 }
@@ -77,7 +77,7 @@
 .story-card p {
     font-size: 1.1rem;
     line-height: 1.7;
-    color: var(--text-secondary);
+    color: #a1a1aa;
     margin-bottom: 1.5rem;
 }
 
@@ -87,7 +87,7 @@
     gap: 1.5rem;
     margin-top: 2rem;
     padding-top: 2rem;
-    border-top: 1px solid #e9ecef;
+    border-top: 1px solid #374151;
 }
 
 .stat-item {
@@ -98,7 +98,7 @@
     display: block;
     font-size: 2.5rem;
     font-weight: 700;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #8b5cf6 0%, #a855f7 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -109,14 +109,14 @@
 .stat-label {
     display: block;
     font-size: 0.9rem;
-    color: var(--text-secondary);
+    color: #a1a1aa;
     font-weight: 500;
 }
 
 .about__technologies h3 {
     font-size: 1.75rem;
     font-weight: 600;
-    color: var(--text-color);
+    color: #f4f4f5;
     margin-bottom: 2rem;
     text-align: center;
 }
@@ -132,17 +132,17 @@
     flex-direction: column;
     align-items: center;
     padding: 1.5rem 1rem;
-    background: white;
+    background: #1e1e2e;
     border-radius: 16px;
-    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.08);
-    border: 1px solid rgba(102, 126, 234, 0.1);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(139, 92, 246, 0.2);
     transition: all 0.3s ease;
     cursor: pointer;
 }
 
 .tech-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 35px rgba(102, 126, 234, 0.15);
+    box-shadow: 0 15px 35px rgba(139, 92, 246, 0.15);
 }
 
 .tech-icon {
@@ -177,11 +177,11 @@
 }
 
 .service-card {
-    background: white;
+    background: #1e1e2e;
     padding: 2.5rem;
     border-radius: 20px;
-    box-shadow: 0 15px 35px rgba(102, 126, 234, 0.08);
-    border: 1px solid rgba(102, 126, 234, 0.1);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(139, 92, 246, 0.2);
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
@@ -194,7 +194,7 @@
     left: 0;
     right: 0;
     height: 3px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #8b5cf6 0%, #a855f7 100%);
     transform: scaleX(0);
     transition: transform 0.3s ease;
 }
@@ -204,7 +204,7 @@
 }
 
 .service-card:hover {
-    box-shadow: 0 25px 50px rgba(102, 126, 234, 0.15);
+    box-shadow: 0 25px 50px rgba(139, 92, 246, 0.15);
 }
 
 .service-icon {
@@ -213,7 +213,7 @@
     justify-content: center;
     width: 60px;
     height: 60px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #8b5cf6 0%, #a855f7 100%);
     border-radius: 16px;
     color: white;
     font-size: 1.75rem;
@@ -251,7 +251,7 @@
     content: '✓';
     position: absolute;
     left: 0;
-    color: #667eea;
+    color: #8b5cf6;
     font-weight: bold;
 }
 
