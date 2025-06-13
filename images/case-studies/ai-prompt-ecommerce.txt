@@ -1,0 +1,5 @@
+Professional web application interface for e-commerce platform with ai recommendations,
+modern UI/UX design with Next.js, React, MongoDB elements.
+High-quality business presentation image with purple and blue color palette.
+Key visual elements: e-commerce, product recommendations, online shopping, retail, AI.
+Photorealistic, high-detail render, suitable for a portfolio website.

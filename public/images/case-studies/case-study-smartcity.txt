@@ -1,5 +1,0 @@
-# AI-Generated Image Description
-
-Smart city traffic management system with real-time traffic flow visualization, signal timing controls, and emergency vehicle prioritization
-
-This is a placeholder for an AI-generated image representing the smartcity case study.

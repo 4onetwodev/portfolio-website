@@ -1,5 +1,0 @@
-Professional web application interface for real estate virtual tour platform,
-modern UI/UX design with Three.js, WebGL, React elements.
-High-quality business presentation image with purple and blue color palette.
-Key visual elements: real estate, virtual tour, 3D walkthrough, property listing, panoramic view.
-Photorealistic, high-detail render, suitable for a portfolio website.

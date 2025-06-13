@@ -1,0 +1,5 @@
+Professional mobile application interface for food delivery & restaurant discovery app,
+modern UI/UX design with Flutter, Firebase, location services elements.
+High-quality business presentation image with blue and cyan color palette.
+Key visual elements: food delivery, restaurants, ordering, menus, map navigation.
+Photorealistic, high-detail render, suitable for a portfolio website.

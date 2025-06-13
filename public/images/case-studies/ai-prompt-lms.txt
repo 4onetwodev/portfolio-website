@@ -1,5 +1,0 @@
-Professional web application interface for learning management system for universities,
-modern UI/UX design with React, Node.js, MongoDB elements.
-High-quality business presentation image with purple and blue color palette.
-Key visual elements: education, learning management, courses, assignments, university.
-Photorealistic, high-detail render, suitable for a portfolio website.

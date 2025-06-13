@@ -1,5 +1,0 @@
-Professional software application interface for enterprise resource planning (erp) system,
-modern UI/UX design with React, Node.js, PostgreSQL elements.
-High-quality business presentation image with orange and amber color palette.
-Key visual elements: ERP, business management, resource planning, enterprise, dashboards.
-Photorealistic, high-detail render, suitable for a portfolio website.

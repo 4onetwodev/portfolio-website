@@ -1,0 +1,5 @@
+Professional software application interface for hr management & recruitment platform,
+modern UI/UX design with Vue.js, Node.js, PostgreSQL elements.
+High-quality business presentation image with orange and amber color palette.
+Key visual elements: HR, recruitment, talent management, employee data, onboarding.
+Photorealistic, high-detail render, suitable for a portfolio website.

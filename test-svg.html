@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG Test</title>
+    <style>
+        body { 
+            background-color: #1e1e2e; 
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .test-container {
+            margin: 20px;
+            border: 1px solid #555;
+            padding: 10px;
+            text-align: center;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #666;
+        }
+        .bg-image {
+            width: 800px;
+            height: 400px;
+            background-size: cover;
+            background-position: center;
+            margin: 20px auto;
+            border: 1px solid #666;
+        }
+    </style>
+</head>
+<body>
+    <h1>SVG Test Page</h1>
+    
+    <div class="test-container">
+        <h2>Direct Image Tag</h2>
+        <img src="/portfolio-website/images/case-studies/case-study-ecommerce.svg" alt="E-Commerce SVG">
+    </div>
+    
+    <div class="test-container">
+        <h2>Background Image CSS</h2>
+        <div class="bg-image" style="background-image: url('/portfolio-website/images/case-studies/case-study-ecommerce.svg');">
+        </div>
+    </div>
+    
+    <div class="test-container">
+        <h2>Direct SVG Content</h2>
+        <object type="image/svg+xml" data="/portfolio-website/images/case-studies/case-study-ecommerce.svg" width="800" height="400">
+            Your browser does not support SVG
+        </object>
+    </div>
+</body>
+</html>

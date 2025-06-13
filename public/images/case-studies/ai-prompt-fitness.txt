@@ -1,5 +1,0 @@
-Professional mobile application interface for fitness tracking & social workout app,
-modern UI/UX design with React Native, Firebase, health APIs elements.
-High-quality business presentation image with blue and cyan color palette.
-Key visual elements: fitness, workout, tracking, health metrics, social features.
-Photorealistic, high-detail render, suitable for a portfolio website.

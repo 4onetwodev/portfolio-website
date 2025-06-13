@@ -1,5 +1,0 @@
-# AI-Generated Image Description
-
-Smart home control app interface showing room controls, automation settings, energy consumption charts, and connected devices
-
-This is a placeholder for an AI-generated image representing the smarthome case study.

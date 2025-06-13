@@ -1,5 +1,0 @@
-# AI-Generated Image Description
-
-Medical telemedicine interface showing video consultation between doctor and patient, with health metrics dashboard and appointment calendar
-
-This is a placeholder for an AI-generated image representing the healthcare case study.

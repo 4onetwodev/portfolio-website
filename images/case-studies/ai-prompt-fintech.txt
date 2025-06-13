@@ -1,0 +1,5 @@
+Professional mobile application interface for personal finance & investment tracker,
+modern UI/UX design with React Native, secure APIs, charts elements.
+High-quality business presentation image with blue and cyan color palette.
+Key visual elements: finance, investment, banking, budget tracking, portfolio management.
+Photorealistic, high-detail render, suitable for a portfolio website.
