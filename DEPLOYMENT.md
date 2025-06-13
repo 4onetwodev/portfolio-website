@@ -1,5 +1,15 @@
 # Portfolio Website Deployment Guide
 
+## GitHub Pages Deployment
+1. Make sure your code is pushed to GitHub repository
+2. Run the deploy script:
+   ```bash
+   npm run deploy
+   ```
+3. The site will be automatically built and deployed to the gh-pages branch
+4. Access your published site at: https://[your-github-username].github.io/[your-repository-name]
+5. If needed, configure a custom domain in your repository settings
+
 ## Cloudflare Pages Deployment
 
 ### Option 1: Manual Upload
