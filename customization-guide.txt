@@ -1,0 +1,40 @@
+CLIENT DASHBOARD CUSTOMIZATION GUIDE
+
+TO CUSTOMIZE FOR YOUR REAL CLIENTS:
+
+1. RENAME FOLDERS:
+   - Rename /clients/acme/ to /clients/[client-name]/
+   - Rename /clients/globex/ to /clients/[client-name-2]/
+
+2. UPDATE CLIENT NAMES IN HTML:
+   Edit each client's index.html:
+
+   Line 6: <title>CLIENT NAME - Project Dashboard</title>
+   Line 12: <h1>CLIENT NAME</h1>
+   Line 13: <p>PROJECT DESCRIPTION</p>
+
+3. CUSTOMIZE PROGRESS DATA:
+   Update the progress percentages in each file:
+   - data-count="75" (change the number)
+   - data-percentage="85" (change progress bars)
+
+4. MODIFY PROJECT MODULES:
+   Replace generic modules with your actual work:
+   - "Frontend Development" → "Your actual module"
+   - "Backend API" → "Your actual module"
+   - "Database Design" → "Your actual module"
+
+5. UPDATE TIMELINE:
+   Replace sample timeline entries with real project updates
+
+6. CONTACT INFO:
+   Update email links and contact information
+
+EXAMPLE REAL CLIENT SETUP:
+/clients/techstartup/
+- Title: "TechStartup Inc - Mobile App Development"
+- Modules: "iOS App", "Android App", "Backend API", "Admin Dashboard"
+
+/clients/retailcorp/
+- Title: "RetailCorp - E-commerce Website"
+- Modules: "Product Catalog", "Shopping Cart", "Payment System", "Inventory Management"

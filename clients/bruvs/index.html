@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bruvs - POS System & Website Development</title>
+    <link rel="stylesheet" href="../../assets/app.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+</head>
+<body>
+    <div class="dashboard-container">
+        <div class="dashboard-header">
+            <h1>Bruvs</h1>
+            <p>POS System & Website Development Project</p>
+        </div>
+
+        <div class="dashboard-content">
+            <!-- Project Statistics -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>Overall Progress</h3>
+                    <div class="stat-value" data-count="65" data-suffix="%">0%</div>
+                    <div class="stat-label">Complete</div>
+                </div>
+                <div class="stat-card">
+                    <h3>POS System</h3>
+                    <div class="stat-value" data-count="70" data-suffix="%">0%</div>
+                    <div class="stat-label">Progress</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Website</h3>
+                    <div class="stat-value" data-count="60" data-suffix="%">0%</div>
+                    <div class="stat-label">Progress</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Integration</h3>
+                    <div class="stat-value" data-count="45" data-suffix="%">0%</div>
+                    <div class="stat-label">POS-Website Sync</div>
+                </div>
+            </div>
+
+            <!-- Progress Breakdown -->
+            <div class="progress-section">
+                <h2 class="section-title">Development Progress</h2>
+
+                <div class="progress-item">
+                    <div class="progress-header">
+                        <span class="progress-title">POS Frontend Interface</span>
+                        <span class="progress-percentage" id="percentage-pos-frontend">80%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progress-pos-frontend" data-percentage="80"></div>
+                    </div>
+                </div>
+
+                <div class="progress-item">
+                    <div class="progress-header">
+                        <span class="progress-title">POS Backend & Database</span>
+                        <span class="progress-percentage" id="percentage-pos-backend">75%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progress-pos-backend" data-percentage="75"></div>
+                    </div>
+                </div>
+
+                <div class="progress-item">
+                    <div class="progress-header">
+                        <span class="progress-title">Payment Processing</span>
+                        <span class="progress-percentage" id="percentage-payments">60%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progress-payments" data-percentage="60"></div>
+                    </div>
+                </div>
+
+                <div class="progress-item">
+                    <div class="progress-header">
+                        <span class="progress-title">Website Frontend</span>
+                        <span class="progress-percentage" id="percentage-website">65%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progress-website" data-percentage="65"></div>
+                    </div>
+                </div>
+
+                <div class="progress-item">
+                    <div class="progress-header">
+                        <span class="progress-title">Inventory Management</span>
+                        <span class="progress-percentage" id="percentage-inventory">55%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progress-inventory" data-percentage="55"></div>
+                    </div>
+                </div>
+
+                <div class="progress-item">
+                    <div class="progress-header">
+                        <span class="progress-title">Reporting & Analytics</span>
+                        <span class="progress-percentage" id="percentage-analytics">40%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progress-analytics" data-percentage="40"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Excel Upload Section -->
+            <div class="progress-section">
+                <h2 class="section-title">📊 Update Dashboard from Excel</h2>
+                <div class="excel-upload-container">
+                    <div id="excel-upload-area" class="upload-area">
+                        <div class="upload-content">
+                            <h3>📁 Drop Excel File Here</h3>
+                            <p>Or click to browse for your project data Excel file</p>
+                            <small>Supports .xlsx and .xls files • Data saves permanently</small>
+                        </div>
+                    </div>
+                    <input type="file" id="excel-file-input" accept=".xlsx,.xls" style="display: none;">
+
+                    <!-- Clear Data Button -->
+                    <div style="text-align: center; margin-top: 10px;">
+                        <button onclick="clearSavedData()" class="btn" style="background: #e74c3c; font-size: 0.9rem; padding: 8px 16px;">
+                            🗑️ Clear Saved Data
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Charts Section -->
+            <div class="progress-section">
+                <h2 class="section-title">Project Analytics</h2>
+                <div id="excel-charts">
+                    <!-- Charts will be generated from Excel data -->
+                    <div style="display: flex; align-items: center; justify-content: center; height: 200px; background: #f8f9fa; border-radius: 10px; color: #7f8c8d; margin: 20px 0;">
+                        <div style="text-align: center;">
+                            <h3>📈 Upload Excel file to see charts</h3>
+                            <p>Charts will automatically generate from your data</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Milestones -->
+            <div class="milestones-section">
+                <h2 class="section-title">Project Milestones</h2>
+                <div id="milestones-container">
+                    <div class="milestone completed">
+                        <div class="milestone-icon">✓</div>
+                        <div class="milestone-content">
+                            <h4>Project Planning & Requirements</h4>
+                            <p>Completed requirements gathering for both POS system and website functionality</p>
+                        </div>
+                    </div>
+
+                    <div class="milestone completed">
+                        <div class="milestone-icon">✓</div>
+                        <div class="milestone-content">
+                            <h4>Database Design</h4>
+                            <p>Designed unified database schema for POS transactions, inventory, and website data</p>
+                        </div>
+                    </div>
+
+                    <div class="milestone completed">
+                        <div class="milestone-icon">✓</div>
+                        <div class="milestone-content">
+                            <h4>POS Core Framework</h4>
+                            <p>Built the foundational POS system architecture and basic transaction handling</p>
+                        </div>
+                    </div>
+
+                    <div class="milestone in-progress">
+                        <div class="milestone-icon">⟳</div>
+                        <div class="milestone-content">
+                            <h4>POS User Interface</h4>
+                            <p>Developing intuitive touch-friendly interface for cashier operations</p>
+                        </div>
+                    </div>
+
+                    <div class="milestone in-progress">
+                        <div class="milestone-icon">⟳</div>
+                        <div class="milestone-content">
+                            <h4>Website Development</h4>
+                            <p>Building responsive website with product catalog and online ordering</p>
+                        </div>
+                    </div>
+
+                    <div class="milestone pending">
+                        <div class="milestone-icon">○</div>
+                        <div class="milestone-content">
+                            <h4>Payment Gateway Integration</h4>
+                            <p>Integrating Stripe/Square for both POS and website transactions</p>
+                        </div>
+                    </div>
+
+                    <div class="milestone pending">
+                        <div class="milestone-icon">○</div>
+                        <div class="milestone-content">
+                            <h4>POS-Website Synchronization</h4>
+                            <p>Real-time inventory sync between POS and website systems</p>
+                        </div>
+                    </div>
+
+                    <div class="milestone pending">
+                        <div class="milestone-icon">○</div>
+                        <div class="milestone-content">
+                            <h4>Testing & Training</h4>
+                            <p>Comprehensive testing and staff training for POS system deployment</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Timeline -->
+            <div class="timeline-section">
+                <h2 class="section-title">Development Updates</h2>
+                <div id="timeline-container">
+                    <div class="timeline-item">
+                        <div class="timeline-date">Sep 22, 2024</div>
+                        <div class="timeline-content">
+                            <h4>POS Interface Improvements</h4>
+                            <p>Enhanced the cashier interface with better product search and faster checkout flow</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-date">Sep 20, 2024</div>
+                        <div class="timeline-content">
+                            <h4>Website Product Catalog</h4>
+                            <p>Completed responsive product catalog with category filtering and search functionality</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-date">Sep 18, 2024</div>
+                        <div class="timeline-content">
+                            <h4>Inventory Management Module</h4>
+                            <p>Implemented inventory tracking with low-stock alerts and automatic reorder points</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-date">Sep 15, 2024</div>
+                        <div class="timeline-content">
+                            <h4>POS Transaction System</h4>
+                            <p>Core transaction processing completed with receipt printing and cash drawer integration</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-date">Sep 12, 2024</div>
+                        <div class="timeline-content">
+                            <h4>Database Migration</h4>
+                            <p>Successfully deployed production database with optimized schema for both POS and website</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="contact-section">
+                <h3>Project Communication</h3>
+                <div class="contact-info">
+                    <p>Last updated: <span id="last-updated"></span></p>
+                    <p>Next milestone review: September 30, 2024</p>
+                    <p>Weekly progress calls: Fridays 2:00 PM</p>
+                </div>
+                <a href="mailto:hello@4onetwo.dev" class="btn">Contact Project Team</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../assets/app.js"></script>
+    <script>
+        // Bruvs-specific configurations
+        document.addEventListener('DOMContentLoaded', function() {
+            // Enable auto-refresh every 10 minutes
+            // DashboardUtils.enableAutoRefresh(10);
+
+            // Example: Embed Bruvs project tracking chart
+            // DashboardUtils.embedChart('main-chart', 'YOUR_BRUVS_LOOKER_STUDIO_URL');
+        });
+    </script>
+</body>
+</html>

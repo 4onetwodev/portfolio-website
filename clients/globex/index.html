@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Globex Corporation - Project Dashboard</title>
+    <link rel="stylesheet" href="../../assets/app.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <div class="dashboard-header">
+            <h1>Globex Corporation</h1>
+            <p>Enterprise CRM System Development</p>
+        </div>
+
+        <div class="dashboard-content">
+            <!-- Project Statistics -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>Overall Progress</h3>
+                    <div class="stat-value" data-count="45" data-suffix="%">0%</div>
+                    <div class="stat-label">Complete</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Sprint Progress</h3>
+                    <div class="stat-value" data-count="8" data-suffix="/12">0/12</div>
+                    <div class="stat-label">User Stories</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Days in Sprint</h3>
+                    <div class="stat-value" data-count="6" data-suffix=" days">0 days</div>
+                    <div class="stat-label">Remaining</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Code Quality</h3>
+                    <div class="stat-value" data-count="98" data-suffix="%">0%</div>
+                    <div class="stat-label">SonarQube Score</div>
+                </div>
+            </div>
+
+            <!-- Progress Breakdown -->
+            <div class="progress-section">
+                <h2 class="section-title">Development Progress</h2>
+
+                <div class="progress-item">
+                    <div class="progress-header">
+                        <span class="progress-title">User Management Module</span>
+                        <span class="progress-percentage" id="percentage-users">90%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progress-users" data-percentage="90"></div>
+                    </div>
+                </div>
+
+                <div class="progress-item">
+                    <div class="progress-header">
+                        <span class="progress-title">Contact Management</span>
+                        <span class="progress-percentage" id="percentage-contacts">75%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progress-contacts" data-percentage="75"></div>
+                    </div>
+                </div>
+
+                <div class="progress-item">
+                    <div class="progress-header">
+                        <span class="progress-title">Sales Pipeline</span>
+                        <span class="progress-percentage" id="percentage-sales">60%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progress-sales" data-percentage="60"></div>
+                    </div>
+                </div>
+
+                <div class="progress-item">
+                    <div class="progress-header">
+                        <span class="progress-title">Reporting Dashboard</span>
+                        <span class="progress-percentage" id="percentage-reports">30%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progress-reports" data-percentage="30"></div>
+                    </div>
+                </div>
+
+                <div class="progress-item">
+                    <div class="progress-header">
+                        <span class="progress-title">Integration APIs</span>
+                        <span class="progress-percentage" id="percentage-apis">25%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progress-apis" data-percentage="25"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Charts Section -->
+            <div class="progress-section">
+                <h2 class="section-title">Sprint Burn-down Chart</h2>
+                <div class="chart-container" id="burndown-chart">
+                    <!-- Looker Studio chart will be embedded here -->
+                    <div style="display: flex; align-items: center; justify-content: center; height: 400px; background: #f8f9fa; border-radius: 10px; color: #7f8c8d;">
+                        <div style="text-align: center;">
+                            <h3>📈 Sprint Burn-down</h3>
+                            <p>Embed your sprint tracking chart here</p>
+                            <small>Connect to your project management tool data</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Current Sprint -->
+            <div class="milestones-section">
+                <h2 class="section-title">Current Sprint (Sprint 3)</h2>
+                <div id="milestones-container">
+                    <div class="milestone completed">
+                        <div class="milestone-icon">✓</div>
+                        <div class="milestone-content">
+                            <h4>User Authentication Enhancement</h4>
+                            <p>Implemented multi-factor authentication and role-based access control</p>
+                        </div>
+                    </div>
+
+                    <div class="milestone completed">
+                        <div class="milestone-icon">✓</div>
+                        <div class="milestone-content">
+                            <h4>Contact Import/Export</h4>
+                            <p>Added bulk contact import from CSV and export functionality</p>
+                        </div>
+                    </div>
+
+                    <div class="milestone in-progress">
+                        <div class="milestone-icon">⟳</div>
+                        <div class="milestone-content">
+                            <h4>Sales Opportunity Tracking</h4>
+                            <p>Building the sales pipeline management interface</p>
+                        </div>
+                    </div>
+
+                    <div class="milestone in-progress">
+                        <div class="milestone-icon">⟳</div>
+                        <div class="milestone-content">
+                            <h4>Activity Logging</h4>
+                            <p>Implementing comprehensive activity tracking for all user interactions</p>
+                        </div>
+                    </div>
+
+                    <div class="milestone pending">
+                        <div class="milestone-icon">○</div>
+                        <div class="milestone-content">
+                            <h4>Email Integration</h4>
+                            <p>Connect with Office 365 and Gmail for seamless email management</p>
+                        </div>
+                    </div>
+
+                    <div class="milestone pending">
+                        <div class="milestone-icon">○</div>
+                        <div class="milestone-content">
+                            <h4>Mobile Responsive Design</h4>
+                            <p>Optimize the interface for mobile and tablet devices</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Timeline -->
+            <div class="timeline-section">
+                <h2 class="section-title">Development Log</h2>
+                <div id="timeline-container">
+                    <div class="timeline-item">
+                        <div class="timeline-date">Sep 21, 2024</div>
+                        <div class="timeline-content">
+                            <h4>Sprint 3 Planning</h4>
+                            <p>Completed sprint planning session with updated user stories and acceptance criteria</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-date">Sep 19, 2024</div>
+                        <div class="timeline-content">
+                            <h4>Contact Management</h4>
+                            <p>Deployed contact management module to staging environment for testing</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-date">Sep 17, 2024</div>
+                        <div class="timeline-content">
+                            <h4>Security Audit</h4>
+                            <p>Completed security review and implemented recommended security enhancements</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-date">Sep 14, 2024</div>
+                        <div class="timeline-content">
+                            <h4>Sprint 2 Demo</h4>
+                            <p>Successfully demonstrated user management features to stakeholders</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-date">Sep 12, 2024</div>
+                        <div class="timeline-content">
+                            <h4>Database Optimization</h4>
+                            <p>Optimized database queries and improved application performance by 40%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="contact-section">
+                <h3>Sprint Review & Planning</h3>
+                <div class="contact-info">
+                    <p>Last updated: <span id="last-updated"></span></p>
+                    <p>Next sprint review: September 28, 2024</p>
+                    <p>Daily standups: 9:00 AM EST</p>
+                </div>
+                <a href="mailto:hello@4onetwo.dev" class="btn">Contact Scrum Master</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../assets/app.js"></script>
+    <script>
+        // Client-specific configurations
+        document.addEventListener('DOMContentLoaded', function() {
+            // Enable auto-refresh every 10 minutes for enterprise client
+            // DashboardUtils.enableAutoRefresh(10);
+
+            // Example: Embed sprint tracking chart
+            // DashboardUtils.embedChart('burndown-chart', 'YOUR_SPRINT_TRACKING_EMBED_URL');
+        });
+    </script>
+</body>
+</html>
