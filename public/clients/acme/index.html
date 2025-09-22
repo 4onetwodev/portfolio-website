@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACME Corp - Project Dashboard</title>
+    <link rel="stylesheet" href="../../assets/app.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <div class="dashboard-header">
+            <h1>ACME Corp</h1>
+            <p>E-Commerce Platform Development</p>
+        </div>
+
+        <div class="dashboard-content">
+            <!-- Project Statistics -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>Overall Progress</h3>
+                    <div class="stat-value" data-count="75" data-suffix="%">0%</div>
+                    <div class="stat-label">Complete</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Days Remaining</h3>
+                    <div class="stat-value" data-count="28" data-suffix=" days">0 days</div>
+                    <div class="stat-label">Until Launch</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Features Complete</h3>
+                    <div class="stat-value" data-count="12" data-suffix="/16">0/16</div>
+                    <div class="stat-label">Core Features</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Tests Passing</h3>
+                    <div class="stat-value" data-count="94" data-suffix="%">0%</div>
+                    <div class="stat-label">Test Coverage</div>
+                </div>
+            </div>
+
+            <!-- Progress Breakdown -->
+            <div class="progress-section">
+                <h2 class="section-title">Project Progress</h2>
+
+                <div class="progress-item">
+                    <div class="progress-header">
+                        <span class="progress-title">Frontend Development</span>
+                        <span class="progress-percentage" id="percentage-frontend">85%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progress-frontend" data-percentage="85"></div>
+                    </div>
+                </div>
+
+                <div class="progress-item">
+                    <div class="progress-header">
+                        <span class="progress-title">Backend API</span>
+                        <span class="progress-percentage" id="percentage-backend">70%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progress-backend" data-percentage="70"></div>
+                    </div>
+                </div>
+
+                <div class="progress-item">
+                    <div class="progress-header">
+                        <span class="progress-title">Database Design</span>
+                        <span class="progress-percentage" id="percentage-database">100%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progress-database" data-percentage="100"></div>
+                    </div>
+                </div>
+
+                <div class="progress-item">
+                    <div class="progress-header">
+                        <span class="progress-title">Payment Integration</span>
+                        <span class="progress-percentage" id="percentage-payment">60%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progress-payment" data-percentage="60"></div>
+                    </div>
+                </div>
+
+                <div class="progress-item">
+                    <div class="progress-header">
+                        <span class="progress-title">Testing & QA</span>
+                        <span class="progress-percentage" id="percentage-testing">45%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progress-testing" data-percentage="45"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Charts Section -->
+            <div class="progress-section">
+                <h2 class="section-title">Analytics Dashboard</h2>
+                <div class="chart-container" id="main-chart">
+                    <!-- Looker Studio chart will be embedded here -->
+                    <div style="display: flex; align-items: center; justify-content: center; height: 400px; background: #f8f9fa; border-radius: 10px; color: #7f8c8d;">
+                        <div style="text-align: center;">
+                            <h3>📊 Analytics Chart</h3>
+                            <p>Embed your Looker Studio chart iframe here</p>
+                            <small>Replace this placeholder with your chart URL</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Milestones -->
+            <div class="milestones-section">
+                <h2 class="section-title">Project Milestones</h2>
+                <div id="milestones-container">
+                    <div class="milestone completed">
+                        <div class="milestone-icon">✓</div>
+                        <div class="milestone-content">
+                            <h4>Project Setup & Planning</h4>
+                            <p>Initial setup, requirements gathering, and technical planning completed</p>
+                        </div>
+                    </div>
+
+                    <div class="milestone completed">
+                        <div class="milestone-icon">✓</div>
+                        <div class="milestone-content">
+                            <h4>Database Design</h4>
+                            <p>Complete database schema design and setup</p>
+                        </div>
+                    </div>
+
+                    <div class="milestone in-progress">
+                        <div class="milestone-icon">⟳</div>
+                        <div class="milestone-content">
+                            <h4>Core Frontend Development</h4>
+                            <p>Building main user interface components and pages</p>
+                        </div>
+                    </div>
+
+                    <div class="milestone in-progress">
+                        <div class="milestone-icon">⟳</div>
+                        <div class="milestone-content">
+                            <h4>API Development</h4>
+                            <p>Creating RESTful APIs for product management and user authentication</p>
+                        </div>
+                    </div>
+
+                    <div class="milestone pending">
+                        <div class="milestone-icon">○</div>
+                        <div class="milestone-content">
+                            <h4>Payment Integration</h4>
+                            <p>Integrating Stripe payment processing</p>
+                        </div>
+                    </div>
+
+                    <div class="milestone pending">
+                        <div class="milestone-icon">○</div>
+                        <div class="milestone-content">
+                            <h4>Testing & Launch</h4>
+                            <p>Comprehensive testing and production deployment</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Timeline -->
+            <div class="timeline-section">
+                <h2 class="section-title">Recent Updates</h2>
+                <div id="timeline-container">
+                    <div class="timeline-item">
+                        <div class="timeline-date">Sep 20, 2024</div>
+                        <div class="timeline-content">
+                            <h4>Frontend Components</h4>
+                            <p>Completed product listing and shopping cart components with responsive design</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-date">Sep 18, 2024</div>
+                        <div class="timeline-content">
+                            <h4>API Endpoints</h4>
+                            <p>Implemented user authentication and product management APIs</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-date">Sep 15, 2024</div>
+                        <div class="timeline-content">
+                            <h4>Database Migration</h4>
+                            <p>Successfully migrated to production database with optimized schemas</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-date">Sep 12, 2024</div>
+                        <div class="timeline-content">
+                            <h4>Design Review</h4>
+                            <p>Completed UI/UX design review and received client approval</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="contact-section">
+                <h3>Need Updates or Have Questions?</h3>
+                <div class="contact-info">
+                    <p>Last updated: <span id="last-updated"></span></p>
+                    <p>Next update scheduled: September 25, 2024</p>
+                </div>
+                <a href="mailto:hello@4onetwo.dev" class="btn">Contact Project Manager</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../assets/app.js"></script>
+    <script>
+        // Client-specific configurations
+        document.addEventListener('DOMContentLoaded', function() {
+            // Enable auto-refresh every 5 minutes
+            // DashboardUtils.enableAutoRefresh(5);
+
+            // Example: Embed a Looker Studio chart
+            // DashboardUtils.embedChart('main-chart', 'YOUR_LOOKER_STUDIO_EMBED_URL');
+        });
+    </script>
+</body>
+</html>
